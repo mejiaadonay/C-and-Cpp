@@ -30,4 +30,10 @@ relative/path/to/dir/filename.extension
 # Ignore a file without extension
 relative/path/to/dir/anotherfile
 
+# This solve the .DS_Store file problem in Github
+# find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+# .DS_Store
+# git add .gitignore
+# git commit -m '.DS_Store banished!'
+
 .DS_Store
